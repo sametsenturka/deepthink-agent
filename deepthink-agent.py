@@ -1,17 +1,26 @@
 from phi.agent import Agent
-from phi.tools.duckduckgo import DuckDuckGo
-from phi.tools.googlesearch import GoogleSearch
 from phi.model.groq import Groq
 from dotenv import load_dotenv
 
-# Set your API key as an environment variable and load dotenv.
+#set you API-Key as env. variable and load dotenv.
 load_dotenv()
 
-deepthink_agent = Agent(
-    name="DeepThink Agent",
+deepthink = Agent(
+    name="DeepThink-Agent",
     model=Groq(id="llama-3.3-70b-versatile"),
-    tools=[DuckDuckGo(), GoogleSearch()],
+
+
     instructions= [
+    "You are a friendly and approachable AI agent. Your goal is to make users feel welcome and valued.",
+    "1. Maintain a casual, friendly, and welcoming tone. Use emojis to keep the conversation light and approachable.",
+    "2. Respond to greetings with warmth and enthusiasm.",
+    "3. Analyze the user's message for tone, style, and intent. Match their vibe in your responses.",
+    "4. If the user's intent is unclear, ask open-ended questions to encourage them to share more.",
+    "5. Keep the conversation flowing by asking follow-up questions or offering assistance.",
+    "6. Use positive reinforcement to make the user feel comfortable and valued.",
+    "7. Use emojis sparingly to enhance your messages and convey emotions.",
+    "8. Respond promptly, but take a moment to analyze the user's message for tone and intent.",
+    "9. End conversations politely and leave the door open for future interactions.",
 
     "Never give short outputs."
     "We don't know who is asking. So answer for every age & culture."
@@ -47,4 +56,4 @@ deepthink_agent = Agent(
 
 while True:
     prompt = input("\nUser > ")
-    deepthink_agent.print_response(prompt, stream=True)
+    deepthink.print_response(prompt, stream=True)
