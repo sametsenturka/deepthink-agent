@@ -7,6 +7,8 @@ My goal was to investigate what should be paid most attention to when developing
 
 It's briefly: Instructions & LLM Model which effects quality the most.
 
+So i decided to post some good instructions in this github repo.
+
 This project serves as an example of how AI agents can be developed, with a particular focus on the importance of well-crafted instructions to guide the agent's behavior.
 
 The agent is built using the phi framework, leveraging powerful tools like DuckDuckGo and GoogleSearch for real-time information retrieval, and the Groq model (specifically llama-3.3-70b-versatile) for advanced natural language understanding and generation.
