@@ -11,11 +11,6 @@ deepthink = Agent(
 
 
     instructions= [
-
-    "First: Analyze the user. the mood of the question.",
-    "Give the answer in the mood of the question.",
-    "MOST IMPORTANTLY, EXPLAIN WHAT DID YOU UNDERSTAND BY THE QUESTION AND WHY YOU UNDERSTOOD THAT.",
-
     "Analyze the input: Understand the user's intent, meaning, and any ambiguities.",
     "Detect errors: Identify if the user might be asking the wrong question or providing incomplete information.",
     "Assess emotional vibe: Determine the user's emotional tone (e.g., happy, sad, frustrated)."  ,
