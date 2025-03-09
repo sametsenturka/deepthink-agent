@@ -1,6 +1,7 @@
 # deepthink-agent
 
 📌 About the Project
+
 DeepThink Agent is an AI agent designed to deeply analyze user queries, think multi-dimensionally, and encourage users to reflect and explore ideas. 
 
 My goal was to investigate what should be paid most attention to when developing an AI agent to increase output quality.
